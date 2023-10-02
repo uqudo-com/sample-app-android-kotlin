@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">UqudoSDK Sample</string>
+<!--    <string name="uq_api_base_url" translatable="false">hostname</string>-->
+</resources>
