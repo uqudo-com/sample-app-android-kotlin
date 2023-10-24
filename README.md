@@ -12,7 +12,7 @@ This project is a sample Android application that demonstrates the usage of the 
 1. Clone the project from the repository.
 
     ```sh
-    git clone https://github.com/uqudo-com/sample-app-android.git
+    git clone https://github.com/uqudo-com/sample-app-android-kotlin.git
     ```
 
 2. Open the project in Android Studio and let it synchronize.
