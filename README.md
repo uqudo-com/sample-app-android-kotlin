@@ -37,10 +37,10 @@ This project is a sample Android application that demonstrates the usage of the 
 
 ## How it works
 
-1. Initialize the `UqudoSDK` in the `onCreate()` method of `MainActivity`.
+1. Initialize the `UqudoSDK` in the `onCreate()` method of `MainApplication` once your app gets initialized.
 
     ```kotlin
-    UqudoSDK.init(applicationContext)
+    UqudoSDK.init(this)
     ```
 
 2. Set up `ActivityResultLauncher` to handle the result of the Uqudo Enrollment process.
