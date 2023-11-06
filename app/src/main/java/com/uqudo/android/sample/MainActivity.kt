@@ -67,6 +67,13 @@ class MainActivity : AppCompatActivity() {
             if (result.resultCode == Activity.RESULT_OK) {
                 val data: Intent? = result.data
                 val resultJWS = data?.getStringExtra("data")
+
+                // Parsing the JWS (JSON Web Signature) result on the client side, as returned from the SDK, is strongly discouraged.
+                // We only show this for demonstration purposes.
+                // This practice can prevent the verification of the data's integrity.
+                // To maintain security, the "resultJWS" value should be sent to your backend server, where signature verification and parsing should be conducted.
+                // This method allows for a reliable confirmation of the data's integrity.
+
                 CoroutineScope(Dispatchers.Main).launch {
                     val claims = parseJWS(resultJWS!!)
                     Toast.makeText(
