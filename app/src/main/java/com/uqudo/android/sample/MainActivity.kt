@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         val claims = withContext(Dispatchers.IO) {
             Jwts.parserBuilder().setSigningKeyResolver(
                     JwkKeyResolver(
-                        UrlJwkProvider("https://uqudo.io/api")
+                        UrlJwkProvider("https://id.uqudo.io/api")
                     )
                 ).build().parseClaimsJws(resultJWS)
         }
