@@ -7,6 +7,8 @@ class MainApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        UqudoSDK.init(this)
+        UqudoSDK.init(this);
+        UqudoSDK.setLocale(this, "en");
+
     }
 }
