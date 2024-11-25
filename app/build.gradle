@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.uqudo.android.sample"
         minSdk 24
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -45,7 +45,7 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-    implementation 'io.uqudo.sdk:Uqudo:2.7.1'
+    implementation 'io.uqudo.sdk:Uqudo:3.2.1'
 
     // JWS Parsing
     implementation 'io.jsonwebtoken:jjwt-api:0.11.2'
